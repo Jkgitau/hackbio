@@ -1,0 +1,8 @@
+# For loop to print 4 to 10
+# print values 4 to 10
+
+for i in range(4, 11):
+  
+  # print the numbers in the range
+  print(i, end=" ")
+  
