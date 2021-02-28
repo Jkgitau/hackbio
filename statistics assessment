@@ -1,0 +1,50 @@
+# a SCRIPT FOR STATISTICS ASSESSMENT
+#question1 
+# a function to calculate mean of 3 numbers
+#first, create user defined function
+myfn <- function(a,b,c){
+  result <- ((a+b+c)/3)
+  print(result)
+}
+
+# calculate the mean of values 2,4 and 6 as a demo
+myfn(2,4,6)
+
+#question2
+#load female mice data
+
+data <- read.csv("femaleMiceWeights.csv", header = TRUE)
+
+# See the first five lines of the dataset
+head(data)
+
+# calculate the overal mean and variation for the two diets
+mean(data$Bodyweight)
+
+Mean = 25.32375
+
+#calculate variation among all mice
+var(data$Bodyweight)
+
+#var = 14.78
+
+# calculate the mean and variation for specific diets used
+
+# mean for chow diet
+chow <- mean(data[1:12,2])
+
+# Sd for chow diet
+chow <- sd(data[1:12,2])
+
+#chow diet sd = 3.022541
+
+
+# mean for hf diet
+hf <- mean(data[13:24,2])
+
+#hf diet mean =  26.83417
+
+# sd for hf diet
+hf <- sd(data[13:24,2])
+
+#hf diet sd = 4.097606
