@@ -3,4 +3,3 @@
 
 # count the number of sequences in each fasta file.
 grep -c ">" *.fasta
-done
